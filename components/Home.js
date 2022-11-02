@@ -7,7 +7,7 @@ const Home = ({navigation}) => {
 
         <Image 
           source={{uri:'https://img.freepik.com/free-vector/bus-driver-concept-illustration_114360-6610.jpg?w=360'}}
-          style={{width:250,height:250,marginTop:-100}} />
+          style={{width:250,height:250,marginTop:-50}} />
 
         <View>
           <Button 
@@ -16,35 +16,14 @@ const Home = ({navigation}) => {
             color="#0d316b"
           />
 
-
-          {/* <Button
-            title="Payment"
-            onPress={() =>
-              navigation.navigate('Payment')
-            }
-            style={styles.btn}
-           
-          />
-          <Button
-            color={'#f194ff'}
-            title="About"
-            onPress={() =>
-              navigation.navigate('About')
-            }
-            style={styles.btn}
-          />
-          <Button
-            color={'#00008b'}
-            title="Scan QR"
-            onPress={() =>
-              navigation.navigate('InspectorScan')
-            }
-            style={styles.btn}
-          />
-           */}
-          <Text>Already Registered ?</Text>
+          <Text style={styles.topic}>Easy Going</Text>
+          <Text style={{paddingHorizontal:20,textAlign:'center'}}>Things Go Better and Nothing is Faster Than  <Text style={{paddingRight:20,fontWeight:'bold'}}>Easy Going</Text> </Text>
+          <Text style={{paddingHorizontal:20,textAlign:'center',paddingVertical:10}}>The Best Way of Recharging Your Ticket</Text>
+          <Text style={styles.subt}>Already Registered ?</Text>
           <Button title='Login' color="#0d316b" />
         </View>
+
+        
     </View>
   );
 }
@@ -56,7 +35,18 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
-    
+    topic:{
+      textAlign:'center',
+      fontWeight:'bold',
+      fontSize:30,
+      padding:20
+    },
+    subt: {
+      textAlign:'center',
+      padding:10,
+      fontWeight:'bold',
+    },
+  
   });
 
 export default Home

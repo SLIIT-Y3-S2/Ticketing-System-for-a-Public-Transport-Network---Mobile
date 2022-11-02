@@ -34,12 +34,12 @@ const Payment = () => {
             />
 
         <Text style={styles.label}>Expiry Date</Text>
-            <DatePicker
+            {/* <DatePicker
                 mode="monthYear"
                 selectorStartingYear={2022}
                 onMonthYearChange={selectedDate => setExpireDate(selectedDate)}
                 value={expdate}
-            />
+            /> */}
             <TextInput
                 placeholder='MM/YY'
                 style={styles.input}
@@ -102,6 +102,7 @@ const styles = StyleSheet.create({
     },
     view: {
         backgroundColor: 'white',
+        padding: 10,
     },
     form: {
         padding: 5,
