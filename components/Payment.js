@@ -101,8 +101,7 @@ const styles = StyleSheet.create({
         padding: 5
     },
     view: {
-        padding: 10,
-        backgroundColor: '#00bfff',
+        backgroundColor: 'white',
     },
     form: {
         padding: 5,

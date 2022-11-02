@@ -7,31 +7,34 @@ import Home from './components/Home';
 import About from './components/About';
 import Payment from './components/Payment';
 import InspectorScan from './components/InspectorScan';
+import BottomNavBar from './components/BottomNavBar';
 
-const Stack = createStackNavigator();
+// const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen
-            name="Home"
-            component={Home}
-          />
-          <Stack.Screen
-            name="About"
-            component={About}
-          />
-          <Stack.Screen
-            name="Payment"
-            component={Payment}
-          />
-          <Stack.Screen
-            name="InspectorScan"
-            component={InspectorScan}
-          />
-        </Stack.Navigator>
-    </NavigationContainer>
+    // <NavigationContainer>
+    //     <Stack.Navigator>
+    //       <Stack.Screen
+    //         name="Home"
+    //         component={Home}
+    //       />
+    //       <Stack.Screen
+    //         name="About"
+    //         component={About}
+    //       />
+    //       <Stack.Screen
+    //         name="Payment"
+    //         component={Payment}
+    //       />
+    //       <Stack.Screen
+    //         name="InspectorScan"
+    //         component={InspectorScan}
+    //       />
+    //     </Stack.Navigator>
+    //    
+    // </NavigationContainer>
+    <BottomNavBar />
   );
 }
 

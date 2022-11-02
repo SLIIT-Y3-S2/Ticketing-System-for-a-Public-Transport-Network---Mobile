@@ -17,7 +17,7 @@ const Home = ({navigation}) => {
           />
 
 
-          <Button
+          {/* <Button
             title="Payment"
             onPress={() =>
               navigation.navigate('Payment')
@@ -41,8 +41,9 @@ const Home = ({navigation}) => {
             }
             style={styles.btn}
           />
-          
-          <Text>Don't have an account ?</Text>
+           */}
+          <Text>Already Registered ?</Text>
+          <Button title='Login' color="#0d316b" />
         </View>
     </View>
   );

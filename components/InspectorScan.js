@@ -45,9 +45,8 @@ const styles = StyleSheet.create({
       flex: 1,
       flexDirection: 'column',
       justifyContent: 'center',
-      backgroundColor: '#00bfff',
       margin: 10,
-      marginBottom: 90,
+      marginBottom: 10,
     },
   });
 
