@@ -8,7 +8,6 @@ import {
   Text,
 } from "react-native";
 import DatePicker from "react-native-modern-datepicker";
-import DateTimePicker from '@react-native-community/datetimepicker';
 
 const AddJourney = () => {
   const [validated, setvalidated] = useState(false);
