@@ -13,11 +13,9 @@ const DriverScan = () => {
     }, []);
     const handleBarCodeScanned = ({ type, data }) => {
         setScanned(true);
-        alert(`Bar code with type ${type} and data ${data} has been scanned!`);
-
-
-        
+        alert(`Bar code with type ${type} and data ${data} has been scanned!`);        
     };
+    
     if (hasPermission === null) {
         return <Text>Requesting for camera permission</Text>;
     }
