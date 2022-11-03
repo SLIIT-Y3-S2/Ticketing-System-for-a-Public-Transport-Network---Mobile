@@ -32,29 +32,20 @@ export default function App() {
     //     </Stack.Navigator>
     //
     // </NavigationContainer>
-
-  // <NavigationContainer>
-  //       <Stack.Navigator>
-  //       <Stack.Screen
-  //           name="Home"
-  //           component={Home}
-  //         />
-  //         <Stack.Screen
-  //           name="DriverScan"
-  //           component={DriverScan}
-  //         />
-  //         <Stack.Screen
-  //           name="AddJourney"
-  //           component={AddJourney}
-  //         />
-  //         <Stack.Screen
-  //           name="DriverDash"
-  //           component={DriverDash}
-  //         />
-  //       </Stack.Navigator>
-  //   </NavigationContainer>
-
-  <BottomNavBar />
+    <>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="Register" component={Register} />
+          <Stack.Screen
+            name="Easy Going"
+            component={BottomNavBar}
+            options={{ headerShown: false }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+      {/* <BottomNavBar /> */}
+    </>
   );
 }
 
