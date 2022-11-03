@@ -6,13 +6,7 @@ import 'react-native-gesture-handler';
 import DriverScan from './Components/DriverScan';
 import Home from './Components/Home';
 import React from 'react';
-import AddJourney from './Components/AddJourney';
-import DriverDash from './Components/DriverDash';
-import About from './components/About';
-import Payment from './components/Payment';
-import InspectorScan from './components/InspectorScan';
-import BottomNavBar from './components/BottomNavBar';
-
+import BottomNavBar from './Components/BottomNavBar';
 //const Stack = createStackNavigator();
 
 export default function App() {
