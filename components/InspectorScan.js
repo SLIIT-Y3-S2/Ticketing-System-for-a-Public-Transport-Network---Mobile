@@ -14,7 +14,7 @@ const InspectorScan = () => {
     }, []);
     const handleBarCodeScanned = ({ type, data }) => {
         setScanned(true);
-        alert(`Bar code with type ${type} and data ${data} has been scanned!`);
+        alert(`User ID: - ${data}`);
         
     };
     if (hasPermission === null) {
