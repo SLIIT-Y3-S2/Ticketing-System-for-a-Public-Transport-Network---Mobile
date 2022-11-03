@@ -30,7 +30,7 @@ export default function App() {
     //         component={InspectorScan}
     //       />
     //     </Stack.Navigator>
-    //    
+    //
     // </NavigationContainer>
 
   // <NavigationContainer>
