@@ -1,17 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { NavigationContainer, StackActions } from '@react-navigation/native';
+import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import 'react-native-gesture-handler';
-import Home from './components/Home';
-import About from './components/About';
-import Payment from './components/Payment';
-import InspectorScan from './components/InspectorScan';
-import BottomNavBar from './components/BottomNavBar';
-import Login from './components/Login';
-import Register from './components/Register';
-
- const Stack = createStackNavigator();
+import DriverScan from './Components/DriverScan';
+import Home from './Components/Home';
+import React from 'react';
+import BottomNavBar from './Components/BottomNavBar';
+//const Stack = createStackNavigator();
 
 export default function App() {
   return (
