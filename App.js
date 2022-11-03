@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, StackActions } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import 'react-native-gesture-handler';
 import Home from './components/Home';
@@ -8,8 +8,10 @@ import About from './components/About';
 import Payment from './components/Payment';
 import InspectorScan from './components/InspectorScan';
 import BottomNavBar from './components/BottomNavBar';
+import Login from './components/Login';
+import Register from './components/Register';
 
-// const Stack = createStackNavigator();
+ const Stack = createStackNavigator();
 
 export default function App() {
   return (
@@ -32,9 +34,17 @@ export default function App() {
     //         component={InspectorScan}
     //       />
     //     </Stack.Navigator>
-    //    
+    //
     // </NavigationContainer>
-    <BottomNavBar />
+    <>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="Register" component={Register} />
+        </Stack.Navigator>
+      </NavigationContainer>
+      {/* <BottomNavBar /> */}
+    </>
   );
 }
 

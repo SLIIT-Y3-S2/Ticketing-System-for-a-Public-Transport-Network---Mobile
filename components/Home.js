@@ -20,7 +20,7 @@ const Home = ({navigation}) => {
           <Text style={{paddingHorizontal:20,textAlign:'center'}}>Things Go Better and Nothing is Faster Than  <Text style={{paddingRight:20,fontWeight:'bold'}}>Easy Going</Text> </Text>
           <Text style={{paddingHorizontal:20,textAlign:'center',paddingVertical:10}}>The Best Way of Recharging Your Ticket</Text>
           <Text style={styles.subt}>Already Registered ?</Text>
-          <Button title='Login' color="#0d316b" />
+          <Button title='Login' color="#0d316b" onPress={() => navigation.navigate("Login")}/>
         </View>
 
         
