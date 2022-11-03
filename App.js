@@ -3,11 +3,13 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import 'react-native-gesture-handler';
-import DriverScan from './Components/DriverScan';
-import Home from './Components/Home';
+import DriverScan from './components/DriverScan';
+import Home from './components/Home';
 import React from 'react';
-import BottomNavBar from './Components/BottomNavBar';
-//const Stack = createStackNavigator();
+import BottomNavBar from './components/BottomNavBar';
+import Login from './components/Login';
+import Register from './components/Register';
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
@@ -37,6 +39,7 @@ export default function App() {
         <Stack.Navigator>
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Register" component={Register} />
+          <Stack.Screen name="DriverScan" component={DriverScan} />
           <Stack.Screen
             name="Easy Going"
             component={BottomNavBar}
