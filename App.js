@@ -37,13 +37,13 @@ export default function App() {
     //
     // </NavigationContainer>
     <>
-      <NavigationContainer>
+      {/* <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Register" component={Register} />
         </Stack.Navigator>
-      </NavigationContainer>
-      {/* <BottomNavBar /> */}
+      </NavigationContainer> */}
+      <BottomNavBar />
     </>
   );
 }
