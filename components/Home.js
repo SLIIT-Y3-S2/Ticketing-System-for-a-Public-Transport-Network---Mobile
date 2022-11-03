@@ -1,7 +1,11 @@
 import React from 'react'
 import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
-const Home = ({navigation}) => {
+const Home = ({ navigation }) => {
+  
+  const onPressLogin = () => {
+    navigation.navigate("Login");
+  }
   return (
     <View style={styles.container}>
       <Image
@@ -39,7 +43,7 @@ const Home = ({navigation}) => {
         <Button
           title="Login"
           color="#0d316b"
-          onPress={() => navigation.navigate("Login")}
+          onPress={onPressLogin}
         />
       </View>
     </View>

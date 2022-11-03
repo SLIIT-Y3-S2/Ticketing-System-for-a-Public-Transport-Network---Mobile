@@ -14,7 +14,8 @@ export default function Register({ navigation }) {
   const [email, setEmail] = useState({ value: "", error: "" });
   const [password, setPassword] = useState({ value: "", error: "" });
 
-  const onSignUpPressed = () => {
+    const onSignUpPressed = () => {
+      navigation.replace("Easy Going");
   };
 
   return (

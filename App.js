@@ -37,13 +37,18 @@ export default function App() {
     //
     // </NavigationContainer>
     <>
-      {/* <NavigationContainer>
+      <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Register" component={Register} />
+          <Stack.Screen
+            name="Easy Going"
+            component={BottomNavBar}
+            options={{ headerShown: false }}
+          />
         </Stack.Navigator>
-      </NavigationContainer> */}
-      <BottomNavBar />
+      </NavigationContainer>
+      {/* <BottomNavBar /> */}
     </>
   );
 }

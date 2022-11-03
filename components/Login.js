@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TouchableOpacity, StyleSheet, View } from "react-native";
+import { TouchableOpacity, StyleSheet, View, } from "react-native";
 import { Text } from "react-native-paper";
 import Background from "./Assets/Background";
 import Logo from "./Assets/Logo";
@@ -9,12 +9,13 @@ import TextInput from "./Assets/TextInput";
 import BackButton from "./Assets/BackButton";
 import { theme } from "./core/theme";
 
-export default function Login({ navigation }) {
+export default function Login({navigation}) {
   const [email, setEmail] = useState({ value: "", error: "" });
   const [password, setPassword] = useState({ value: "", error: "" });
 
-  const onLoginPressed = () => {
-    console.log(email, password);
+    const onLoginPressed = () => {
+        console.log(email, password)
+        navigation.replace("Easy Going");
   };
 
   return (

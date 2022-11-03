@@ -8,6 +8,7 @@ import Home from './Home';
 import InspectorScan from './InspectorScan';
 import About from './About';
 import Payment from './Payment';
+import Login from './Login';
 
 
 
@@ -15,12 +16,13 @@ const home = "Home";
 const scan = "Scan QR";
 const schedule = "Schedules";
 const profile = "Profile";
+const login = "Login"
 
 const Tab = createBottomTabNavigator();
 
 const BottomNavBar = () => {
   return (
-    <NavigationContainer>
+    <NavigationContainer independent="true">
       <Tab.Navigator
         initialRouteName={home}
         screenOptions={({ route }) => ({
