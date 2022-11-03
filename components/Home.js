@@ -10,20 +10,24 @@ const Home = ({navigation}) => {
           style={{width:250,height:250,marginTop:-100}} />
 
         <View>
-          <Button 
+          <Button
+            color={'#00008b'}
+            title="Scan QR"
+            onPress={() =>
+              navigation.navigate('DriverDash')
+            }
+            style={styles.btn}
+          />
+
+
+          {/* <Button 
             title='Get Started'
             style={styles.btn}
             color="#0d316b"
           />
-
-          <Text style={styles.topic}>Easy Going</Text>
-          <Text style={{paddingHorizontal:20,textAlign:'center'}}>Things Go Better and Nothing is Faster Than  <Text style={{paddingRight:20,fontWeight:'bold'}}>Easy Going</Text> </Text>
-          <Text style={{paddingHorizontal:20,textAlign:'center',paddingVertical:10}}>The Best Way of Recharging Your Ticket</Text>
-          <Text style={styles.subt}>Already Registered ?</Text>
-          <Button title='Login' color="#0d316b" />
-        </View>
-
-        
+          <Text>Already Registered ?</Text>
+          <Button title='Login' color="#0d316b" /> */}
+          </View>        
     </View>
   );
 }
@@ -35,18 +39,7 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
-    topic:{
-      textAlign:'center',
-      fontWeight:'bold',
-      fontSize:30,
-      padding:20
-    },
-    subt: {
-      textAlign:'center',
-      padding:10,
-      fontWeight:'bold',
-    },
-  
+    
   });
 
 export default Home
